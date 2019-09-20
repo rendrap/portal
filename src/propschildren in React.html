@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <link rel="stylesheet" media="screen"
+    href="https://d2oz8i5n9se8ej.cloudfront.net/assets/bootstrap-fd92ab1f716446abd10ffa15de28fab06b1d6ead7db8e4ba0e8819d0ac57af2f.css"
+    data-turbolinks-track="true" />
+  <link
+    href="https://d3r6cijmzyg9t4.cloudfront.net/themecss/style-f3af53d40c2a70d057530aed692f2557b8427898.css?brand_course_heading=%233c404a&amp;brand_heading=%233c404a&amp;brand_homepage_heading=%233c404a&amp;brand_navbar_fixed_text=%23E30E08&amp;brand_navbar_text=%23E30E08&amp;brand_primary=%23ffffff&amp;brand_secondary=%23E30E08&amp;brand_text=%233c404a&amp;logged_out_homepage_background_image_overlay=0.0&amp;show_login=true&amp;show_signup=false"
+    rel="stylesheet" data-turbolinks-track="true">
+  </link>
+  <title>props.children in React</title>
+</head>
+
+<body data-no-turbolink="true">b'<div class="course-mainbar lecture-content">
+    <h2 id="lecture_heading" class="section-title" data-lecture-id="762576" data-next-lecture-id="2466836"
+      data-lecture-url="/courses/50507/lectures/762576" data-next-lecture-url="/courses/50507/lectures/2466836"
+      data-previous-lecture-url="/courses/50507/lectures/2466821" data-previous-lecture-id="2466821"> <i
+        class="fa fa-file-text" /> &#160; props.children in React</h2> <!-- Attachment Blocks -->
+    <div class="lecture-attachment lecture-attachment-type-html" id="lecture-attachment-1437796">
+      <div class="attachment-data" />
+      <div class="attachment-data" />
+      <div class="lecture-text-container">
+        <p />
+        <p>A very common practice when you\'re dealing with elements (whether React or HTML) is to need access to the
+          specific data between the opening and closing elements. For example, let\'s look at a simple paragraph
+          element.</p>
+        <pre class="prettyprint lang-js">&lt;p&gt;What even is a jQuery?&lt;/p&gt;</pre>
+        <p>If we were implementing the &lt;p&gt; tag ourself, we would need to somehow gain access to "What even is a
+          jQuery?" or whatever is between the opening and closing paragraph tags. Let\'s look at a React component which
+          is similar.</p>
+        <pre class="prettyprint lang-js">&lt;Clock&gt;  12:49 AM&lt;/Clock&gt;</pre>
+        <p>Now with the implementation of our Clock component, we\'ll need somehow to access 12:49 AM or whatever is
+          between the opening and closing element in order to update it. React gives us an easy way to do this and that
+          is via <strong><i>this.props.children</i></strong>. In this case this.props.children will evaluate to 12:49
+          AM.</p>
+        <p>That\'s great, but what if our component is a little more complex?</p>
+        <pre class="prettyprint lang-js">&lt;Clock&gt;  &lt;Time /&gt;  &lt;Period /&gt;&lt;/Clock&gt;</pre>
+        <p>Now admittedly this is a bit of a weird implementation but it\'ll work. Now, as you might have guessed,
+          <strong><i>this.props.children</i></strong> is an array of components rather than just a single component,
+          since there are multiple components nested.</p>
+        <p>So again, <strong>props.children </strong>in a component is just whatever is between the &lt;Opening&gt; and
+          closing &lt;/Opening&gt; blocks of a component.</p>
+      </div>
+    </div><!-- Comments -->
+    <div id="empty_box" /><!-- Scroll to current lecture link position in sidebar -->
+  </div> '</body>

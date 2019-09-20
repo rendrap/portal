@@ -17,6 +17,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+materialize-v1.0.0.zip
 
 npm-debug.log*
 yarn-debug.log*
